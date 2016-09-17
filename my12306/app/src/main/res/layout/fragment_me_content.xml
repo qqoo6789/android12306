@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:layout_marginTop="?actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/linearlayout_style">
+
+            <Button
+                android:id="@+id/bt_login"
+                style="@style/button_ripple_style_margin"
+                android:text="@string/bt_login" />
+
+        </LinearLayout>
+
+        <include layout="@layout/cutting_line" />
+
+        <Button
+            android:id="@+id/bt_register"
+            style="@style/button_ripple_style"
+            android:text="@string/bt_register" />
+
+        <LinearLayout style="@style/linearlayout_style">
+
+            <Button
+                android:id="@+id/bt_guide"
+                style="@style/button_ripple_style_margin"
+                android:text="@string/guide" />
+        </LinearLayout>
+
+        <include layout="@layout/cutting_line" />
+
+        <Button
+            android:id="@+id/bt_service"
+            style="@style/button_ripple_style"
+            android:text="@string/service" />
+
+        <Button
+            android:id="@+id/bt_travel"
+            style="@style/button_ripple_style_margin"
+            android:text="@string/travel" />
+
+        <LinearLayout style="@style/linearlayout_style">
+
+            <Button
+                android:id="@+id/bt_update"
+                style="@style/button_ripple_style_margin"
+                android:text="@string/update" />
+        </LinearLayout>
+
+        <include layout="@layout/cutting_line" />
+
+        <LinearLayout style="@style/linearlayout_style">
+
+            <Button
+                android:id="@+id/bt_notification"
+                style="@style/button_ripple_style"
+                android:text="@string/notification" />
+        </LinearLayout>
+
+        <include layout="@layout/cutting_line" />
+
+        <Button
+            android:id="@+id/bt_about"
+            android:layout_marginBottom="@dimen/bt_margin_bottom_min"
+            style="@style/button_ripple_style"
+            android:text="@string/about" />
+    </LinearLayout>
+
+</LinearLayout>

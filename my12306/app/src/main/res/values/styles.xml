@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">0dp</item>
+    </style>
+
+    <declare-styleable name="BottomNavigationMenu">
+        <!-- menu default background color -->
+        <attr name="android:background" />
+
+        <!-- default badge color -->
+        <attr name="bbn_badgeColor" format="color" />
+
+        <!-- animation duration for the menu items -->
+        <attr name="bbn_itemAnimationDuration" format="integer" />
+
+        <!-- ripple selector color -->
+        <attr name="bbn_rippleColor" format="color" />
+
+        <!-- menu item active color -->
+        <attr name="bbn_itemColorActive" format="color" />
+
+        <!-- menu item inactive color -->
+        <attr name="bbn_itemColorInactive" format="color" />
+    </declare-styleable>
+
+    <style name="linearlayout_style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="linearlayout_style_match" parent="linearlayout_style">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="linearlayout_style_horizontal">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="button_ripple_style">
+        <item name="android:background">@drawable/item_select_clickable</item>
+        <item name="android:drawableRight">@drawable/ic_chevron_right</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dp_25</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+    </style>
+
+    <style name="button_ripple_style_margin" parent="button_ripple_style">
+        <item name="android:layout_marginTop">@dimen/dp_20</item>
+    </style>
+
+    <style name="cutting_line_1dp">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/selectable_item_background_general_light_accent</item>
+    </style>
+
+    <style name="cutting_line_1dp_left">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/md_white</item>
+        <item name="android:layout_width">@dimen/dp_20</item>
+    </style>
+
+    <style name="cutting_line_colorPrimary">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="ToolBarTitleText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/md_white</item>
+        <item name="android:textSize">20sp</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="transparentText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor" >#00000000</item>
+    </style>
+
+    <style name="Card" parent="CardView">
+        <item name="contentPadding">0dp</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
+
+    <style name="button_clickable" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/item_select_clickable</item>
+    </style>
+
+    <style name="button_unclickable" parent="button_clickable">
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="base_text_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="base_white_text_style" parent="base_text_style">
+        <item name="android:textColor">@color/md_white</item>
+    </style>
+
+    <style name="calendar_week_item_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/calendar_enable_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="notAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="textInputStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="edittextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="layoutweightStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="layoutweightStyleHorizon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+</resources>

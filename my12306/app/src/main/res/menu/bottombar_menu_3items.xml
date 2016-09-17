@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    app:bbn_badgeColor="#FFFF0000"
+    app:bbn_rippleColor="#33ffffff">
+  <item
+      android:id="@+id/bbn_item1"
+      android:color="@color/colorPrimary"
+      android:icon="@drawable/ic_tram"
+      android:title="@string/ticket_booking" />
+  <item
+      android:id="@+id/bbn_item2"
+      android:color="@color/colorPrimary"
+      android:icon="@drawable/ic_search"
+      android:title="@string/ticket_search" />
+  <item
+      android:id="@+id/bbn_item3"
+      android:color="@color/colorPrimary"
+      android:icon="@drawable/ic_me"
+      android:title="@string/_12306" />
+
+</menu>

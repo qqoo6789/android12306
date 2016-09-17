@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/linearlayout_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="@string/_0"
+        android:layout_marginTop="@dimen/dp_20"
+        android:id="@+id/tv_order_unfinish"
+        style="@style/base_text_style" />
+</LinearLayout>

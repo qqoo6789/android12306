@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_shortAnimTime"
+    android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+    <item android:state_pressed="true">
+        <bitmap android:src="@mipmap/city_remen_bg"/>
+        <shape>
+            <solid android:color="@color/md_cyan_500"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <bitmap android:src="@mipmap/city_remen_bg"/>
+        <shape>
+            <solid android:color="@color/md_cyan_500"/>
+            <stroke android:color="@color/md_cyan_700"/>
+        </shape>
+    </item>
+    <item android:drawable="@color/md_white">
+        <bitmap android:src="@mipmap/city_remen_bg"/>
+    </item>
+</selector>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar_layout" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#ffeeeeee"
+        android:orientation="vertical">
+
+        <ruijie.com.my12306.widget.citySelector.utils.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/city_edit"
+            android:drawableLeft="@drawable/shape_rectangle_white"
+            android:drawableRight="@drawable/regist_delete"
+            android:gravity="center"
+            android:hint="请输入城市名称"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="22dp"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:singleLine="true"
+            android:textSize="15.0dip" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ListView
+                android:id="@+id/country_lvcountry"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:divider="@color/listview_driver"
+                android:dividerHeight="1px" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:background="@color/green"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30.0dip"
+                android:visibility="invisible" />
+
+            <ruijie.com.my12306.widget.citySelector.widget.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+    </LinearLayout>
+
+</io.codetail.widget.RevealLinearLayout>

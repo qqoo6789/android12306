@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruijie.com.my12306.util.ReboundScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        style="@style/linearlayout_style">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:text="@string/_2018_8_1"
+            android:layout_marginTop="@dimen/dp_20"
+            style="@style/base_text_style"/>
+
+        <LinearLayout style="@style/linearlayout_style">
+            <Button
+                android:id="@+id/bt_order_today"
+                style="@style/button_ripple_style_margin"
+                android:text="@string/order_today" />
+        </LinearLayout>
+
+        <include layout="@layout/cutting_line" />
+
+        <LinearLayout style="@style/linearlayout_style">
+
+            <Button
+                android:id="@+id/bt_order_future"
+                style="@style/button_ripple_style"
+                android:text="@string/order_future" />
+        </LinearLayout>
+
+        <include layout="@layout/cutting_line" />
+
+        <Button
+            android:id="@+id/bt_oreder_history"
+            android:layout_marginBottom="@dimen/bt_margin_bottom_min"
+            style="@style/button_ripple_style"
+            android:text="@string/order_history" />
+
+    </LinearLayout>
+</ruijie.com.my12306.util.ReboundScrollView>

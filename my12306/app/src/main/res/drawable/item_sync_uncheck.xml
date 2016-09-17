@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_shortAnimTime"
+    android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+    <item android:state_pressed="true">
+        <shape android:shape="ring">
+            <solid android:color="@color/md_cyan_500"/>
+            <corners android:radius="@dimen/card_corner_radius"/>
+        </shape>
+    </item>
+    <item android:state_focused="true" android:shape="ring">
+        <shape>
+            <solid android:color="@color/md_cyan_500"/>
+            <stroke android:color="@color/md_cyan_700"/>
+            <corners android:radius="@dimen/card_corner_radius"/>
+        </shape>
+    </item>
+    <item android:drawable="@color/md_white" android:shape="ring">
+        <corners android:radius="@dimen/card_corner_radius"/>
+    </item>
+</selector>
+

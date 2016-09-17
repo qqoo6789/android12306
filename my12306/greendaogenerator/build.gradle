@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+dependencies {
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+dependencies {
+    compile('de.greenrobot:greendao-generator:1.3.0')
+}

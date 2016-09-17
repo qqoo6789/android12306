@@ -1,0 +1,31 @@
+<resources>
+
+    <array name="time">
+        <item>00:00--24:00</item>
+        <item>00:00--06:00</item>
+        <item>06:00--12:00</item>
+        <item>12:00--18:00</item>
+        <item>18:00--24:00</item>
+    </array>
+    
+    <array name="customer_type">
+        <item>学生</item>
+        <item>成人</item>
+        <item>儿童</item>
+        <item>军人</item>
+        <item>残疾人</item>
+    </array>
+
+    <array name="seat_type">
+        <item>不限</item>
+        <item>商务座</item>
+        <item>特等座</item>
+        <item>一等座</item>
+        <item>二等座</item>
+        <item>高级软卧</item>
+        <item>软卧</item>
+        <item>硬卧</item>
+        <item>软座</item>
+        <item>硬座</item>
+    </array>
+</resources>

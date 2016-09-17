@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        android:clickable="true"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_15"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/item_select_clickable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_from"
+            android:text="beijing"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="--"
+            android:id="@+id/tv"
+            android:textSize="@dimen/text_size_14"
+            android:layout_toEndOf="@id/tv_from"
+            android:layout_toRightOf="@id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_to"
+            android:text="shanghai"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv"
+            android:layout_toEndOf="@+id/tv" />
+    </RelativeLayout>

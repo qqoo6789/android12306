@@ -1,0 +1,280 @@
+<LinearLayout
+    android:id="@+id/root"
+    android:background="@color/md_white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单号        :"
+        />
+    <TextView
+        android:id="@+id/textview_onumber"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2015241131"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车次            :"
+        />
+    <TextView
+        android:id="@+id/textview_codenumber"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="G123"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出发时间    :"
+        />
+    <TextView
+        android:id="@+id/textview_startdate"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2016-9-1"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="到达时间    :"
+        />
+    <TextView
+        android:id="@+id/textview_enddate"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2016-9-2"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总路程        :"
+        />
+    <TextView
+        android:id="@+id/textview_mileage"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="213km"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出发站        :"
+        />
+    <TextView
+        android:id="@+id/textview_startsite"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="肇庆"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="终点站        :"
+        />
+    <TextView
+        android:id="@+id/textview_endsite"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="湖南"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车厢号        :"
+        />
+    <TextView
+        android:id="@+id/textview_carriage"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7号"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="座位号        :"
+        />
+    <TextView
+        android:id="@+id/textview_znumber"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20号"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="座位类型    :"
+        />
+    <TextView
+        android:id="@+id/textview_ztype"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="硬卧"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格            :"
+        />
+    <TextView
+        android:id="@+id/textview_price"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="180元"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单人        :"
+        />
+    <TextView
+        android:id="@+id/textview_nickname"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="吴一鸣"/>
+
+  </LinearLayout>
+  <include layout="@layout/cutting_line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:paddingRight="10dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingLeft="20dp"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单日期    :"
+        />
+    <TextView
+        android:id="@+id/textview_odate"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2016-9-1"/>
+
+  </LinearLayout>
+</LinearLayout>

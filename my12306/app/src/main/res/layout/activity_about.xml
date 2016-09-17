@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/base_toolbar_layout"/>
+
+    <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <io.codetail.widget.RevealLinearLayout
+            android:background="#EEEEEE"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_reveal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/about_profile_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_about_card"
+                    android:padding="20dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        app:roundAsCircle="true"
+                        app:placeholderImage="@mipmap/myhead"
+                        android:id="@+id/about_avatar_iv"
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:src="@mipmap/myhead"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/about_avatar_iv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_toEndOf="@id/about_avatar_iv"
+                        android:layout_toRightOf="@id/about_avatar_iv"
+                        android:text="吴一鸣"
+                        android:textColor="@color/base_text_black"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold"
+                        android:typeface="serif"/>
+
+                    <TextView
+                        android:id="@+id/tv_pro_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/about_avatar_iv"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/about_avatar_iv"
+                        android:autoLink="web"
+                        android:text=""
+                        android:textColor="@color/about_sign"
+                        android:textSize="@dimen/text_size_14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/about_avatar_iv"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/github"
+                        android:textColor="@color/about_sign"
+                        android:textSize="@dimen/text_size_14"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_about_card"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/introduce"
+                        android:textColor="@color/about_title"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold"
+                        android:typeface="serif"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:autoLink="web"
+                        android:lineSpacingExtra="2dp"
+                        android:text="@string/about_project_introduce_content"
+                        android:textColor="@color/about_content"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/text_size_13"/>
+
+                </LinearLayout>
+             </LinearLayout>
+        </io.codetail.widget.RevealLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

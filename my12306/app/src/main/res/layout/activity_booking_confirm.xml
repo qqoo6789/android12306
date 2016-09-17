@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/ll"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <include layout="@layout/item_checi_header"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:background="@color/md_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:textSize="@dimen/text_size_25"
+            android:id="@+id/textview_from_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="肇庆"/>
+        <TextView
+            android:textColor="@color/md_blue_500"
+            android:id="@+id/textview_from_time"
+            android:layout_alignLeft="@id/textview_from_city"
+            android:layout_alignStart="@id/textview_from_city"
+            android:layout_below="@id/textview_from_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06:44 出发"/>
+        <TextView
+
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/md_blue_500"
+            android:textSize="@dimen/text_size_20"
+            android:layout_alignTop="@id/textview_from_city"
+
+            android:id="@+id/textview_cnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G1013"/>
+        <LinearLayout
+            android:layout_below="@id/textview_cnumber"
+            android:id="@+id/linearlayout_center"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_idcard"
+                />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="10dp"
+                android:background="@drawable/arrow"/>
+            <TextView
+                android:textSize="@dimen/text_size_12"
+                android:id="@+id/textview_sum_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22小时51分"/>
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/md_blue_500"
+            android:id="@+id/textview_to_time"
+            android:layout_alignStart="@+id/textview_to_city"
+            android:layout_alignLeft="@+id/textview_to_city"
+            android:layout_below="@id/textview_to_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06:44 到站"/>
+        <TextView
+            android:textSize="@dimen/text_size_25"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textview_to_city"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toLeftOf="@+id/linearlayout_switch"
+            android:layout_toStartOf="@+id/linearlayout_switch"
+            android:layout_alignTop="@+id/textview_from_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广州"/>
+    </RelativeLayout>
+    <include layout="@layout/cutting_line"/>
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/md_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/layoutweightStyle">
+            <TextView
+                android:id="@+id/textview_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商务"/>
+
+            <TextView
+                android:id="@+id/textview_type1_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10张"/>
+
+            <TextView
+                android:id="@+id/textview_type1_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥2492.5"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/layoutweightStyle">
+            <TextView
+                android:id="@+id/textview_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一等"/>
+            <TextView
+                android:id="@+id/textview_type2_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10张"/>
+            <TextView
+                android:id="@+id/textview_type2_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥2492.5"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/layoutweightStyle">
+            <TextView
+                android:id="@+id/textview_type3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二等"/>
+            <TextView
+                android:id="@+id/textview_type3_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10张"/>
+            <TextView
+                android:id="@+id/textview_type3_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥2492.5"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/bt_search"
+        android:text="提交订单"
+        android:textColor="@color/md_white"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:background="@drawable/button_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_reg_f"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linearlayout_style_match">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rgTextInputNickName"
+        style="@style/textInputStyle">
+
+        <ruijie.com.my12306.widget.citySelector.utils.ClearEditText
+            android:id="@+id/rgNickName"
+            style="@style/edittextStyle"
+            android:maxLength="12"
+            android:hint="@string/nickname" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rgTextInputIdcard"
+        style="@style/textInputStyle">
+
+        <ruijie.com.my12306.widget.citySelector.utils.ClearEditText
+            android:id="@+id/rgIdcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/idcard"
+            android:maxLength="18"
+            android:inputType="number"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rgTextInputEmail"
+        style="@style/textInputStyle">
+
+        <ruijie.com.my12306.widget.citySelector.utils.ClearEditText
+            android:id="@+id/rgEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:maxLength="20"
+            android:inputType="textEmailAddress"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rgTextInputIdentity"
+        style="@style/textInputStyle">
+
+        <ruijie.com.my12306.widget.citySelector.utils.ClearEditText
+            android:id="@+id/rgIdentity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/identity"
+            android:maxLength="10"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rgTextInputPhone"
+        style="@style/textInputStyle">
+
+        <ruijie.com.my12306.widget.citySelector.utils.ClearEditText
+            android:id="@+id/rgPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

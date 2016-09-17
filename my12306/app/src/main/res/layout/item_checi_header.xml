@@ -1,0 +1,37 @@
+<RelativeLayout
+    android:id="@+id/root"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview_preday"
+        android:textSize="@dimen/text_size_18"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/base_text_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="前一天"/>
+  <TextView
+      android:id="@+id/textview_today"
+      android:textSize="@dimen/text_size_18"
+      android:textStyle="bold"
+      android:textColor="@color/base_text_white"
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="2016-09-03"/>
+  <TextView
+      android:id="@+id/textview_afterday"
+      android:textSize="@dimen/text_size_18"
+      android:textColor="@color/base_text_white"
+      android:layout_alignParentRight="true"
+      android:background="@color/colorPrimary"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:text="后一天"/>
+</RelativeLayout>

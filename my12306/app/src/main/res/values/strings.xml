@@ -1,0 +1,62 @@
+﻿<resources>
+    <string name="app_name">12306</string>
+    <string name="login">登录</string>
+    <string name="sure">确定</string>
+    <string name="ticket_booking">车票预订</string>
+    <string name="ticket_search">订单查询</string>
+    <string name="_12306">我的12306</string>
+    <string name="service">温馨服务</string>
+    <string name="guide">出行导向</string>
+    <string name="bt_login">登录</string>
+    <string name="bt_register">注册</string>
+    <string name="travel">旅游休闲</string>
+    <string name="update">基础数据更新</string>
+    <string name="notification">系统通知</string>
+    <string name="about">关于作者</string>
+    <string name="start_time">出发时间</string>
+    <string name="start_date">出发日期</string>
+    <string name="class_seat">席别</string>
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+    <string name="add">⊕乘客</string>
+    <string name="search">查询</string>
+    <string name="route_recently">最近查找线路</string>
+    <string name="student">学生</string>
+
+    <!-- ====================日历选择器=========================================-->
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="sunday">日</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="today">今天</string>
+    <string name="tomorrow">明天</string>
+    <string name="t_d_a_t">后天</string>
+    <string name="order_day">\n预订日</string>
+    <string name="order_today">今日订单</string>
+    <string name="order_future">未出行订单</string>
+    <string name="order_history">历史订单</string>
+    <string name="_2018_8_1">2018年8月1日</string>
+    <string name="_0">未完成订单(0)</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="certain_password">确认密码</string>
+    <string name="id">身份证号</string>
+    <string name="phone_number">联系方式</string>
+    <string name="identity">身份类型</string>
+    <string name="email">邮箱</string>
+    <string name="register">注册</string>
+    <string name="nickname">昵称</string>
+    <string name="idcard">身份证</string>
+    <string name="introduce">项目介绍</string>
+    <!-- ====================日历选择器=========================================-->
+
+    <string name="about_project_introduce_content">12306项目所用的基本上是Rx系列的框架 ( Square + ReactiveX ) :\n\nRxJava、RxAndroid、Okhttp3、Dagger2、Retrofit2、Butterknife、Fresco、Reservoir\n\n以基本的MVP模式为主划分模块，抽出Presenter作为View代理业务层，减轻View层代码的耦合度，然后集成了现在主流的RxJava+RxAndroid+Retrofit+Dagger2组合框架。\n\n项目地址：https://github.com/RuijiePan/12306\n\nApi接口提供：暂未开放</string>
+    <string name="https_www_zquprj_gmail_com"></string>
+    <string name="github">作者简介：Android程序猿\n\n邮箱：yum_wuyiming@gmail.com</string>
+</resources>

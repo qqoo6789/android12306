@@ -1,0 +1,111 @@
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/linearlayout_style">
+        <ruijie.com.my12306.widget.AddressSelectLayout
+            app:leftText="北京"
+            app:rightText="上海"
+            android:id="@+id/addressLayout"
+            app:centerTextColor="@drawable/sync_textcolor_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ruijie.com.my12306.widget.AddressSelectLayout>
+
+        <include layout="@layout/cutting_line_margin20"/>
+
+        <LinearLayout
+            style="@style/linearlayout_style_horizontal">
+
+            <Button
+                android:text="@string/start_date"
+                style="@style/button_unclickable" />
+
+            <Button
+                android:text="2016-5-7"
+                android:id="@+id/bt_start_date"
+                style="@style/button_clickable" />
+
+            <Button
+                android:id="@+id/bt_customer_type"
+                android:text="学生"
+                style="@style/button_clickable" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearlayout_style_horizontal">
+            <Button
+                android:text="@string/start_time"
+                style="@style/button_unclickable" />
+
+            <Button
+                android:text="00:00--24:00"
+                android:id="@+id/bt_start_time"
+                style="@style/button_clickable" />
+
+            <Button style="@style/button_unclickable"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearlayout_style_horizontal">
+            <Button
+                android:text="@string/class_seat"
+                style="@style/button_unclickable" />
+
+            <Button
+                android:text="VIP座"
+                android:id="@+id/bt_seat_type"
+                style="@style/button_clickable" />
+
+            <Button style="@style/button_unclickable"/>
+        </LinearLayout>
+
+        <include layout="@layout/cutting_line_margin20"/>
+
+        <ruijie.com.my12306.widget.FlowLayout
+            android:id="@+id/flowlayout"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ruijie.com.my12306.widget.FlowLayout>
+
+        <include layout="@layout/cutting_line_margin20"/>
+
+        <ruijie.com.my12306.widget.FlowLayout
+            android:id="@+id/fl_customer"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ruijie.com.my12306.widget.FlowLayout>
+
+        <Button
+            android:id="@+id/bt_search"
+            android:text="@string/search"
+            android:textColor="@color/md_white"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:background="@drawable/button_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            style="@style/linearlayout_style_horizontal"
+            android:layout_marginBottom="@dimen/dp_20">
+            <View style="@style/cutting_line_colorPrimary"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"/>
+            <TextView
+                style="@style/base_text_style"
+                android:text="@string/route_recently"
+                 />
+            <View style="@style/cutting_line_colorPrimary"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"/>
+        </LinearLayout>
+    </LinearLayout>
